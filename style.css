@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url('background_image.jpg') #030728 no-repeat center;
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+}
+
+.first-heading {
+    color: #ebeaea;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-item {
+    color: #fff;
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 8px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.card-item:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.user-image {
+    height: 200px;
+    width: 200px;
+    border-radius: 0%;
+    margin-bottom: 15px;
+    border: 3px solid #fff;
+    padding: 2px;
+    transition: transform 0.3s ease;
+}
+
+.user-image:hover {
+    transform: scale(1.1);
+}
+
+.heading {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.intro {
+    font-size: 1rem;
+    color: #e3e3e3;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.assignment-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: #040404;
+    border-radius: 100px;
+    font-weight: 500;
+    background: #ffffff;
+    border: 1px solid transparent;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.assignment-button:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .first-heading {
+        font-size: 2rem;
+    }
+
+    .card-item {
+        width: 80%;
+    }
+
+    .user-image {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .first-heading {
+        font-size: 1.5rem;
+    }
+
+    .card-item {
+        width: 100%;
+    }
+
+    .user-image {
+        height: 80px;
+        width: 80px;
+    }
+}
