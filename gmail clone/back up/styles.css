@@ -1,0 +1,182 @@
+/* Basic Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.left,
+.middle,
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.left img,
+.middle img,
+.right img {
+    margin-right: 10px;
+}
+
+.middle input[type="text"] {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+/* Main Content Area */
+.main-content {
+    display: flex;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.compose-box {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.sidebar-item:hover {
+    background-color: #f9f9f9;
+}
+
+.sidebar-item img {
+    margin-right: 10px;
+}
+
+.sidebar-item h3 {
+    margin: 0;
+}
+
+.badge {
+    background-color: #007bff;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.more {
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.labels {
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.plus-icon {
+    font-size: 18px;
+    color: #007bff;
+    margin-left: auto;
+}
+
+.list-box {
+    width: calc(100% - 290px);
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.list-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-box li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.list-box li:hover {
+    background-color: #f9f9f9;
+}
+
+.list-box input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .list-box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .left,
+    .middle,
+    .right {
+        margin-bottom: 10px;
+    }
+
+    .middle input[type="text"] {
+        width: 100%;
+    }
+}
+
+/* Additional Styling (Optional) */
+/* You can add more styling for specific elements, such as:
+   - Hover effects
+   - Active states
+   - Typography
+   - Colors
+   - Shadows
+   - etc. */
