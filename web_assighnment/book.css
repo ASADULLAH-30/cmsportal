@@ -1,0 +1,81 @@
+/* Import the font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.alphabet-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #f0f0f0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    text-align: center;
+}
+
+.alphabet-nav ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.alphabet-nav ul li {
+    margin: 0 10px;
+}
+
+.alphabet-nav ul li a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #333;
+}
+
+.alphabet-nav ul li a:hover {
+    color: #007BFF;
+    text-shadow: 0 0 10px rgba(0, 123, 255, 0.7);
+}
+
+#go-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+
+#go-to-top:hover {
+    background: #0056b3;
+}
+
+.alphabet-section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.alphabet-section h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #ccc;
+}
+
+.alphabet-section img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensures smooth scrolling behavior */
+html {
+    scroll-behavior: smooth;
+}
