@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+        }
+        .category-filter {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <!-- Navbar content -->
+      </nav>
+      
+      <nav class="navbar bg-primary" data-bs-theme="dark">
+        <!-- Navbar content -->
+      </nav>
+      
+      <nav class="navbar" style="background-color: #e3f2fd;">
+        <!-- Navbar content -->
+      </nav>
+    <div class="container">
+        <header class="text-center my-5">
+            <h1>HELLO! WELCOME TO NATURE PHOTO GALLERY</h1>
+            <p>WITH CREATIVE & UNIQUE STYLE</p>
+        </header>
+
+        <nav class="text-center mb-4">
+            <span class="category-filter btn btn-outline-primary mx-1" data-filter="all">All</span>
+            <span class="category-filter btn btn-outline-primary mx-1" data-filter="photography">Photography</span>
+            <span class="category-filter btn btn-outline-primary mx-1" data-filter="travel">Travel</span>
+            <span class="category-filter btn btn-outline-primary mx-1" data-filter="nature">Nature</span>
+            <span class="category-filter btn btn-outline-primary mx-1" data-filter="fashion">Fashion</span>
+            <span class="category-filter btn btn-outline-primary mx-1" data-filter="lifestyle">Lifestyle</span>
+        </nav>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="photography">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/026/365/937/small/beautiful-blurred-green-nature-background-ai-generated-photo.jpg" alt="Photography 1">
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="travel">
+                <img src="https://www.shutterstock.com/image-photo/beautiful-blurred-background-image-spring-260nw-2213392711.jpg" alt="Travel 1">
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="nature">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvdvp1ZJRHLkM2kvSgTPQ52tL5d8SWgHhWHA&s" alt="Nature 1">
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="nature">
+                <img src="https://w0.peakpx.com/wallpaper/426/946/HD-wallpaper-nature-background-beautiful-green-nature.jpg" alt="Nature 1">
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="nature">
+                <img src="https://e0.pxfuel.com/wallpapers/481/945/desktop-wallpaper-windows-10-nature-beautiful-nature-beautiful-views-nature-nature.jpg" alt="Nature 1">
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="nature">
+                <img src="https://e0.pxfuel.com/wallpapers/230/331/desktop-wallpaper-shadows-at-sunset-after-the-rain-colors-landscape-clouds-meadow-sky-tree.jpg" alt="Nature 1">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.category-filter').click(function(){
+                var category = $(this).attr('data-filter');
+                if (category == 'all') {
+                    $('.gallery-item').show();
+                } else {
+                    $('.gallery-item').hide();
+                    $('.gallery-item[data-category="'+category+'"]').show();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
