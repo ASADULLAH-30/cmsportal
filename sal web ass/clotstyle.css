@@ -1,0 +1,141 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0; /* Adjust background color as needed */
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li:hover a {
+    color: azure;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .logo-container:hover {
+    color: azure;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    background-color: #e9780f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 60px;
+  }
+  
+  .frnch .btn {
+    border: 2px dotted #0c0000;
+    background: none;
+    color: #0c0000;
+  }
+  
+  .logo-container {
+    height: 40px;
+    width: 60px;
+    display: flex;
+    padding-right: 400px;
+  }
+  
+  .arrow {
+    width: 15px; /* Adjust size as needed */
+    height: 15px;
+    align-items: center;
+  }
+  
+  .slider {
+    width: 100%;
+    height: 510px;
+    position: relative;
+  }
+  
+  .slider img {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .slider img:first-child {
+    display: block;
+  }
+  
+  .navigation-button {
+    text-align: center;
+    position: relative;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .active,
+  .dot:hover {
+    background-color: #717171;
+  }
+  
+  .center-text {
+    background-color: #333;
+    color: thistle;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .text-image {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .salt {
+    height: 100px;
+    width: 100px;
+  }
+  
+  .btn-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .btn-o {
+    background-color: #e9780f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 60px;
+    padding: 10px 20px;
+  }
+ 
