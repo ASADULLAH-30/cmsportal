@@ -1,0 +1,90 @@
+/* General styles for body */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#container {
+    width: 60%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Styling the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+/* Button styling */
+.theme-btn {
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.theme-btn:hover {
+    background-color: #0056b3;
+}
+
+.light {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.dark {
+    background-color: #222;
+    color: white;
+}
+
+.dark th {
+    background-color: #444;
+}
+
+.dark td {
+    background-color: #333;
+}
+
+.dark .theme-btn {
+    background-color: #555;
+}
+
+.dark .theme-btn:hover {
+    background-color: #333;
+}
